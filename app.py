@@ -7,7 +7,7 @@ from fastapi import FastAPI, Header, HTTPException
 from pydantic import BaseModel
 from extract_features import extract_features_from_audio
 
-API_KEY = "MYAPI"
+API_KEY = os.getenv("API_KEY", "MYAPI")
 
 app = FastAPI()
 
