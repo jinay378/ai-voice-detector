@@ -4,8 +4,8 @@ from pydub import AudioSegment
 import os
 import uuid
 
-# 🔧 SET YOUR FFMPEG PATH HERE
-AudioSegment.converter = r"C:\Users\Lenovo-PC\Downloads\ffmpeg-8.0.1-essentials_build\ffmpeg-8.0.1-essentials_build\bin\ffmpeg.exe"
+# ffmpeg is expected to be available on the system PATH
+# (installed via apt in Docker, or via package manager on Linux/Mac)
 
 
 def convert_mp3_to_wav(mp3_path, wav_path):
