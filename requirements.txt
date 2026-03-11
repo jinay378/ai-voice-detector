@@ -2,9 +2,10 @@ fastapi
 uvicorn
 librosa
 numpy
-scikit-learn==1.2.2
+scikit-learn
 pydub
 soundfile
 scipy
 joblib
 python-multipart
+aiofiles
